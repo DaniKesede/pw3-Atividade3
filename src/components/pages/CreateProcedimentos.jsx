@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import style from "./CreateProcedimento.module.css"
 import axios from 'axios';
 
+
 const CadastroProcedimento = () => {
     const [procedimento, setProcedimento] = useState('');
     const [valor, setValor] = useState('');
@@ -34,7 +35,7 @@ const CadastroProcedimento = () => {
             <input 
               placeholder= 'Digite o nome do procedimento '
               type="text"
-              value={procedimento }
+              value={procedimento}
               onChange={(e) => setProcedimento(e.target.value)}
               required
             />
@@ -51,7 +52,9 @@ const CadastroProcedimento = () => {
         </form>
         {mensagem && <p className={style.criar}>{mensagem}</p>}
       </div>
+      
     );
+    
   };
   
   export default CadastroProcedimento;
