@@ -6,6 +6,7 @@ import NavBar from "./components/layout/NavBar";
 import CadastroCliente from "./components/pages/CadastroCliente";
 import CreateProcedimento from "./components/pages/CreateProcedimentos"
 import "./App.css"
+import DetailProcedimento from "./components/pages/Details";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path='/createTime' element={<CreateTime/>}/>
               <Route path='/cadastroProcedimento' element={<CreateProcedimento/>}/>
               <Route path='/cadastroCliente' element={<CadastroCliente/>}/> 
+              <Route path='/details/:id_procedimentos' element={<DetailProcedimento/>}/> 
             </Route>
 
           </Routes>
